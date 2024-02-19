@@ -1,7 +1,10 @@
 // Import necessary modules
 const express = require('express');
 const axios = require('axios');
+const cors = require('cors');
 
+var app = express();
+app.use(cors());
 // Create an Express router instance
 const router = express.Router();
 
