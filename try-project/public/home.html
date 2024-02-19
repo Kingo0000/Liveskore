@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Football</title>
+    <link rel="icon" href="images/icon1.jpeg">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div id="top-nav">
+        <ul class="top-intro">
+
+          <div id="menuToggle">
+
+            <!-- <label class="toggle" for="checkbox">
+              <div class="bar bar--top"></div>
+              <div class="bar bar--middle"></div> 
+              <div class="bar bar--bottom"></div>
+            </label> -->
+            <div class="nav_icon">
+              <i class="col fa fa-navicon nav_icon" id="icon"></i>
+            </div>
+            <aside class="side_navigation reaveal_navBar">
+              <li>
+                <i class="fa fa-home">  </i>
+              </li>
+
+
+              <li>
+                 <span class="dark" >DARK</span>
+                  <span  class="fa " id="dark-mode">Toggle</span>
+                <span class="light">LIGHT</span>
+              </li>
+
+
+
+              <li>
+                <a href="#" class="fa"> About </a>
+              </li>
+              <li> 
+                <a href="./login.html"><i class="fa fa-arrow-right-from-bracket"></i></a>
+              </li>
+            </aside>
+          
+            <div  class="dropdown-content" id="myDropdown"> 
+              <a href="./home.html">Home</a>
+              <a href="https://aboutking.vercel.app">About</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </div> 
+
+          <li> <p>All Football </p> </li>
+
+         
+             <li> <button class="login"><a href="./login.html"> Login </a> </button> </li> 
+           <li> <button class="register"> <a href="./register.html"> Register </a> </button> </li> 
+          </ul>
+
+          <ul class="bigscreen">
+            <li class="list"><a class="active1" href="#home"><i class="fa fa-home"></i> Home </a> </li>
+            <li class="list"><a href="#contact"> <i class="fa fa-user"> </i> Contact </a></li>
+            <li class="list"><a href="https://aboutking.vercel.app">About</a></li>
+            <li class="list exit"><a href="./login.html">Sign Out <i class="fa fa-arrow-right-from-bracket"></i></a></li>
+          </ul>
+
+    </div>
+    <div class="search">
+       <input placeholder="Search..." type="text" class="insearch">
+      <button type="submit" class="insubmit">Go</button>
+    </div>
+
+    
+
+    <div class="options">
+      
+        <ul class="ful">
+          <li> <button class="opt active one1" id="world"> 
+            <img src="/images/earth.png" alt="world" class="img">
+             <div class="btntext"> World </div> 
+            </button>
+          </li>
+          <li> <button class="opt" id="england"> 
+              <img src="/images/england.png" alt="england" class="img">
+               <div class="btntext"> England </div> 
+              </button>
+         </li>
+         <li> <button class="opt" id="spain"> 
+            <img src="/images/spain.png" alt="spain" class="img">
+              <div class="btntext"> Spain </div>
+             </button>
+         </li>
+         <li> <button class="opt" id="italy"> 
+          <img src="/images/italy.png" alt="italy" class="img">
+            <div class="btntext"> Italy </div> 
+           </button>
+       </li>     
+       <li> <button class="opt" id="germany"> 
+        <img src="/images/germany.png" alt="germany" class="img">
+          <div class="btntext"> Germany </div> 
+         </button>
+     </li>      
+     <li> <button class="opt" id="france"> 
+      <img src="/images/france.png" alt="france" class="img">
+        <div class="btntext"> France </div> 
+       </button>
+   </li>          
+   <li> <button class="opt" id="netherland"> 
+    <img src="/images/netherlands.png" alt="netherland" class="img">
+      <div class="btntext">Netherland </div> 
+     </button>
+ </li>           
+        </ul>
+    </div>
+
+    <div class="notification">
+      <div class="notiglow"></div>
+      <div class="notiborderglow"></div>
+      <div class="notititle">Welcome To Football Analysis</div>
+      <div class="notibody"> Get Up to date Statistics</div>
+    </div>
+
+    <div class="sel-con">
+      <div class="sea-son">Select Season: </div>
+      <select name="season" id="season-select"> 
+        <option value="2023"> 2023 - 2024</option>
+        <option value="2022"> 2022 - 2023</option>
+        <option value="2021"> 2021 - 2022</option>
+        <option value="2020"> 2020 - 2021</option>
+      </select>
+    </div>
+
+
+
+  <!--  <div class="midprompt">
+    </div>
+
+    <div class="scores"> </div>
+ --> 
+
+    <div class="leagues">
+      <button class="league pl active" id="premierleague"> <img src="/images/premier-league-1.svg"  class="icon" alt="pl">  </button>
+      <button class="league ll" id="laliga"> <img src="/images/laliga-1.svg" class="laliga" alt="">  </button>
+      <button class="league sa" id="seriaa"> <img src="/images/Lega-Serie-A.png" class="icon" alt="">   </button>
+      <button class="league bl" id="bundesliga"> <img src="/images/bundesliga-2.svg" class="icon" alt="">  </button>
+      <button class="league l1" id="league1"> <img src="/images/French_Ligue_1_logo_PNG4.png" class="icon" alt="">  </button>
+      <button class="league ed" id="eredivise"> <img src="/images/eredivisie-nieuw-logo-2017.svg" class="icon" alt="">   </button>
+      <button class="league cp" id="championship"> <img src="images/championshiplogo.png" class="icon" alt="">  </button>
+      <button class="league ppl" id="primeraliga"> <img src="images/Portuguese-Primeira-Liga-logo.png" class="icon" alt="">  </button>
+      <button class="league ucl" id="championsleague"> <img src="/images/uefa-champions-league-1.svg" class="icon" alt=""> <span>  </span> </button>
+    </div>
+
+    <div class="btn">
+      <button class="btn1 active" id="fixtures">
+       FIXTURES
+      </button>
+      <button  class="btn1 btn3" id="standings">
+       STANDINGS
+      </button>
+      <button  class="btn1 btn3" id="scorers">
+       TOP SCORERS
+       </button>
+    </div>
+
+    <div class="gameweek">
+      <div class="gwktext"> Gameweek: </div>
+       <select name="gameweek" id="matchday-select">
+       </select>
+    </div>
+
+    <div class="mcontainer" id="content">
+      <a href="match.html" id="">
+    <div class="matches first">
+      <div class="mt" id="leagueemblemname-matchday"> Premier League, Gwk?</div>
+      <div class="date" id="utcDate"> date and time</div>
+      <div class="club1" id="homecrest-name"> club1 </div>
+      <div class="status" id="status"> TIMED </div>
+      <div class="hscore" id="homescore" > - </div>
+       <div class="vs" id=""> : </div> 
+       <div class="ascore" id="awayscore"> - </div>
+      <div class="club2" id="name-awaycrest">club 2</div>
+    </div></a>
+    
+    <a href="match.html" id="">
+    <div class="matches second">
+        <div class="mt" id="leagueemblemname-matchday"> Premier League, Gwk?</div>
+        <div class="date" id="utcDate"> date and time</div>
+        <div class="club1" id="homecrest-name"> club1 </div>
+        <div class="status" id="status"> TIMED </div>
+        <div class="hscore" id="homescore" > - </div>
+         <div class="vs" id=""> : </div> 
+         <div class="ascore" id="awayscore"> - </div>
+        <div class="club2" id="name-awaycrest">club 2</div>
+    </div></a>
+
+    <a href="match.html" id="">
+    <div class="matches third">
+        <div class="mt" id="leagueemblemname-matchday"> Premier League, Gwk?</div>
+        <div class="date" id="utcDate"> date and time</div>
+        <div class="club1" id="homecrest-name"> club1 </div>
+        <div class="status" id="status"> TIMED </div>
+        <div class="hscore" id="homescore" > - </div>
+         <div class="vs" id=""> : </div> 
+         <div class="ascore" id="awayscore"> - </div>
+        <div class="club2" id="name-awaycrest">club 2</div>
+    </div></a>
+
+    <a href="match.html" id="">
+    <div class="matches fourth">
+        <div class="mt" id="leagueemblemname-matchday"> Premier League, Gwk?</div>
+        <div class="date" id="utcDate"> date and time</div>
+        <div class="club1" id="homecrest-name"> club1 </div>
+        <div class="status" id="status"> TIMED </div>
+        <div class="hscore" id="homescore" > - </div>
+         <div class="vs" id=""> : </div> 
+         <div class="ascore" id="awayscore"> - </div>
+        <div class="club2" id="name-awaycrest">club 2</div>
+    </div></a>
+
+    <a href="match.html" id="">
+    <div class="matches fifth">
+        <div class="mt" id="leagueemblemname-matchday"> Premier League, Gwk?</div>
+        <div class="date" id="utcDate"> date and time</div>
+        <div class="club1" id="homecrest-name"> club1 </div>
+        <div class="status" id="status"> TIMED </div>
+        <div class="hscore" id="homescore" > - </div>
+         <div class="vs" id=""> : </div> 
+         <div class="ascore" id="awayscore"> - </div>
+        <div class="club2" id="name-awaycrest">club 2</div>
+    </div></a>
+
+    <a href="match.html" id="">
+    <div class="matches sixth">
+        <div class="mt" id="leagueemblemname-matchday"> Premier League, Gwk?</div>
+        <div class="date" id="utcDate"> date and time</div>
+        <div class="club1" id="homecrest-name"> club1 </div>
+        <div class="status" id="status"> TIMED </div>
+        <div class="hscore" id="homescore" > - </div>
+         <div class="vs" id=""> : </div> 
+         <div class="ascore" id="awayscore"> - </div>
+        <div class="club2" id="name-awaycrest">club 2</div>
+    </div></a>
+
+    <a href="match.html" id="">
+    <div class="matches seventh">
+        <div class="mt" id="leagueemblemname-matchday"> Premier League, Gwk?</div>
+        <div class="date" id="utcDate"> date and time</div>
+        <div class="club1" id="homecrest-name"> club1 </div>
+        <div class="status" id="status"> TIMED </div>
+        <div class="hscore" id="homescore" > - </div>
+         <div class="vs" id=""> : </div> 
+         <div class="ascore" id="awayscore"> - </div>
+        <div class="club2" id="name-awaycrest">club 2</div>
+    </div></a>
+
+    <a href="match.html" id="">
+    <div class="matches eight">
+        <div class="mt" id="leagueemblemname-matchday"> Premier League, Gwk?</div>
+        <div class="date" id="utcDate"> date and time</div>
+        <div class="club1" id="homecrest-name"> club1 </div>
+        <div class="status" id="status"> TIMED </div>
+        <div class="hscore" id="homescore" > - </div>
+         <div class="vs" id=""> : </div> 
+         <div class="ascore" id="awayscore"> - </div>
+        <div class="club2" id="name-awaycrest">club 2</div>
+    </div></a>
+
+    <a href="match.html" id="">
+    <div class="matches ninth">
+        <div class="mt" id="leagueemblemname-matchday"> Premier League, Gwk?</div>
+        <div class="date" id="utcDate"> date and time</div>
+        <div class="club1" id="homecrest-name"> club1 </div>
+        <div class="status" id="status"> TIMED </div>
+        <div class="hscore" id="homescore" > - </div>
+         <div class="vs" id=""> : </div> 
+         <div class="ascore" id="awayscore"> - </div>
+        <div class="club2" id="name-awaycrest">club 2</div>
+    </div></a>
+
+    <a href="match.html" id="">
+    <div class="matches tenth">
+        <div class="mt" id="leagueemblemname-matchday"> Premier League, Gwk?</div>
+        <div class="date" id="utcDate"> date and time</div>
+        <div class="club1" id="homecrest-name"> club1 </div>
+        <div class="status" id="status"> TIMED </div>
+        <div class="hscore" id="homescore" > - </div>
+         <div class="vs" id=""> : </div> 
+         <div class="ascore" id="awayscore"> - </div>
+        <div class="club2" id="name-awaycrest">club 2</div>
+    </div></a>
+
+  </div>
+
+  <div class="scontainer" id="scontent">
+       
+    <table id="standings-table">
+        <thead>
+        <tr>
+          <th>S/N</th>
+          <th> CLUB</th>
+          <th>PTS</th>
+          <th>MP</th>
+          <th>W</th>
+          <th>D </th>
+          <th>L</th>
+          <th>GD</th>
+        </tr>
+      </thead>
+
+      <tbody id="standings-table-body"> 
+        <tr>
+          <td>?</td>
+          <td></td>
+            <td>????</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+              <td>?</td>
+              <td></td>
+            <td>????</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+              <td>?</td>
+              <td></td>
+            <td>????</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+              <td>?</td>
+              <td></td>
+            <td>????</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+              <td>?</td>
+              <td></td>
+            <td> ????</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+              <td>?</td>
+              <td></td>
+            <td>????</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+              <td>?</td>
+              <td></td>
+              <td>????</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>  
+            <tr>
+              <td>?</td>
+              <td></td>
+              <td>????</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>   
+            <tr>
+              <td>?</td>
+              <td></td>
+              <td>????</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>   
+            <tr>
+              <td>?</td>
+              <td></td>
+              <td>????</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>   
+            <tr>
+              <td>?</td>
+              <td></td>
+              <td>????</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>   
+            <tr>
+              <td>?</td>
+              <td></td>
+              <td>????</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>   
+            <tr>
+              <td>?</td>
+              <td></td>
+              <td>????</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>   
+            <tr>
+              <td>?</td>
+              <td></td>
+              <td>????</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>   
+            <tr>
+              <td>?</td>
+              <td></td>
+              <td>????</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>   
+            <tr>
+              <td>?</td>
+              <td></td>
+              <td>????</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>   
+            <tr>
+              <td>?</td>
+              <td></td>
+              <td>????</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>   
+            <tr>
+              <td>?</td>
+              <td></td>
+              <td>????</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>   
+            <tr>
+              <td>?</td>
+              <td></td>
+              <td>????</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>   
+            <tr>
+      </tbody>
+      </table>
+</div>
+
+<div class="tcontainer" id="tcontent">
+
+    <table id="scorers-table">
+        <thead>
+        <tr>
+          <th>S/N</th>
+          <th>PLAYER NAME</th>
+          <th>GOALS</th>
+          <th>A</th>
+          <th>P/K</th>
+          <th>MP</th>
+        </tr>
+      </thead>
+  
+      <tbody id="scorers-table-body"> 
+      <tr>
+        <td>?</td>
+        <td></td>
+          <td>????</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+            <td>?</td>
+            <td></td>
+          <td>????</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+            <td>?</td>
+            <td></td>
+          <td>????</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+            <td>?</td>
+            <td></td>
+          <td>????</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+            <td>?</td>
+            <td></td>
+          <td> ????</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+            <td>?</td>
+            <td></td>
+          <td>????</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+            <td>?</td>
+            <td></td>
+            <td>????</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>  
+          <tr>
+            <td>?</td>
+            <td></td>
+            <td>????</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>   
+          <tr>
+            <td>?</td>
+            <td></td>
+            <td>????</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>   
+          <tr>
+            <td>?</td>
+            <td></td>
+            <td>????</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>   
+          <tr>
+            <td>?</td>
+            <td></td>
+            <td>????</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>   
+          <tr>
+            <td>?</td>
+            <td></td>
+            <td>????</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>   
+          <tr>
+            <td>?</td>
+            <td></td>
+            <td>????</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>   
+          <tr>
+            <td>?</td>
+            <td></td>
+            <td>????</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>   
+          <tr>
+            <td>?</td>
+            <td></td>
+            <td>????</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>   
+          <tr>
+            <td>?</td>
+            <td></td>
+            <td>????</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>   
+          <tr>
+            <td>?</td>
+            <td></td>
+            <td>????</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>   
+          <tr>
+            <td>?</td>
+            <td></td>
+            <td>????</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>   
+          <tr>
+            <td>?</td>
+            <td></td>
+            <td>????</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>   
+          <tr>
+    </tbody>
+      </table>
+</div>
+
+
+<div>
+  
+</div>
+    <script src="javascripts/fetchstand.js"></script>
+    <script src="javascripts/fetchscore.js"></script>
+    <script src="javascripts/script.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,329 @@
+body{
+    background-image: url(/images//IMG_5670.JPG);
+    background-size: 100%;
+    position: relative;
+}
+
+#containerr{
+    padding: 200px;
+    margin-top: 6%;
+    margin-bottom: 7%;
+    margin-left: 10%;
+    margin-right: 15%;
+    background:
+    linear-gradient( to top, rgba(175, 220, 233, 0.164), rgba(40, 134, 151, 0.289)),
+    url('noise.svg');
+    border-radius: 39px;
+    box-shadow: -60px 60px 50px rgba(23, 22, 22, 0.64);
+}
+
+#container{
+  padding: 12%;
+  margin-top: 6%;
+  margin-bottom: 7%;
+  margin-left: 10%;
+  margin-right: 15%;
+  background:
+  linear-gradient( to top, rgba(175, 220, 233, 0.164), rgba(40, 134, 151, 0.289)),
+  url('noise.svg');
+  border-radius: 39px;
+  box-shadow: -60px 60px 50px rgba(23, 22, 22, 0.64);
+}
+
+#welcometab{
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    bottom: 0%;
+    right: 65%;
+    background:
+    linear-gradient(rgba(119, 188, 231, 0.158), rgba(103, 202, 251, 0.537)),
+    url('noise.svg');
+    border-top-left-radius: 39px;
+    border-bottom-left-radius: 39px;
+    visibility: visible;
+}
+
+#welcometext{
+    text-align: center;
+    font-size: 190%;
+    font-weight: lighter;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 8px;
+}
+
+#naccounttext{
+    margin-top: 98px;
+    padding: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+    font-size: 32px;
+    letter-spacing: 0px;
+    margin-left: 37px;
+    word-spacing: -7px;
+}
+
+#switch{
+    height: 70px;
+    width: 70px;
+}
+
+#switchh{
+    position: absolute;
+    left: 87%;
+    top: 34%;
+}
+
+#switch:hover{
+    width: 80px;
+    height: 80px;
+}
+
+#loginbtn{
+    width: 150px;
+    height: 30px;
+    border-radius: 32px;
+    margin-left: 26%;
+    margin-top: 24%;
+    background-color: rgba(255, 255, 255, 0.135);
+    box-shadow: -5px 5px 2px rgba(0, 0, 0, 0.319);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.355);
+}
+
+#loginbtn:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(8, 8, 8);
+    cursor: pointer;
+}
+
+#whatsapp{
+    height: 20px;
+    width: 20px;
+    margin-left: 30%;
+    margin-right: 12px;
+}
+
+#twitter{
+    height: 20px;
+    width: 20px;
+    margin-right: 12px;
+}
+
+#ig{
+    height: 20px;
+    width: 20px;
+    margin-right: 12px;
+}
+
+#me{
+    height: 20px;
+    width: 20px;
+}
+
+#createaccnttext{
+    position: absolute;
+    top: 1%;
+    left: 40%;
+    font-size: 270%;
+    font-weight: lighter;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+#form{
+    margin-top: 10%;
+}
+
+#username{
+    position: absolute;
+    left: 48%;
+    top: 20%;
+    width: 28%;
+    height: 11%;
+    border-radius: 32px;
+    background-color: rgba(255, 255, 255, 0.586);
+    box-shadow: -6px 6px 2px rgba(0, 0, 0, 0.319);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+    border: 0px solid rgba(0, 0, 0, 0.355);
+    text-align: center;
+}
+
+
+#email{
+    position: absolute;
+    left: 48%;
+    top: 35%;
+    width: 28%;
+    height: 11%;
+    border-radius: 32px;
+    background-color: rgba(255, 255, 255, 0.586);
+    box-shadow: -6px 6px 2px rgba(0, 0, 0, 0.319);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+    border: 0px solid rgba(0, 0, 0, 0.355);
+    text-align: center;
+}
+
+#pword{
+    position: absolute;
+    left: 48%;
+    top: 50%;
+    width: 28%;
+    height: 11%;
+    border-radius: 32px;
+    background-color: rgba(255, 255, 255, 0.586);
+    box-shadow: -6px 6px 2px rgba(0, 0, 0, 0.319);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+    border: 0px solid rgba(0, 0, 0, 0.355);
+    text-align: center;
+}
+
+#create{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 56%;
+    top: 70%;
+    width: 16%;
+    height: 9%;
+    border-radius: 32px;
+    background-image: linear-gradient(rgb(3, 4, 4), rgba(7, 7, 7, 0.755));
+    box-shadow: -6px 6px 2px rgba(0, 0, 0, 0.319);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+    border: 0px solid rgba(0, 0, 0, 0.355);
+    letter-spacing: 2px;
+}
+#create:hover{
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+}
+
+#eaccounttext{
+    margin-top: 98px;
+    padding: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+    font-size: 28px;
+    letter-spacing: 0px;
+    margin-left: 10px;
+    word-spacing: -7px;
+}
+
+#cabutton{
+    width: 200px;
+    height: 30px;
+    border-radius: 32px;
+    margin-left: 16%;
+    margin-top: 24%;
+    background-color: rgba(255, 255, 255, 0.135);
+    box-shadow: -5px 5px 2px rgba(0, 0, 0, 0.319);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.355);
+}
+
+#cabutton:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(8, 8, 8);
+    cursor: pointer;
+}
+
+#lusername{
+    position: absolute;
+    left: 48%;
+    top: 27%;
+    width: 28%;
+    height: 11%;
+    border-radius: 32px;
+    background-color: rgba(255, 255, 255, 0.586);
+    box-shadow: -6px 6px 2px rgba(0, 0, 0, 0.319);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+    border: 0px solid rgba(0, 0, 0, 0.355);
+    text-align: center;
+}
+
+
+#lpword{
+    position: absolute;
+    left: 48%;
+    top: 50%;
+    width: 28%;
+    height: 11%;
+    border-radius: 32px;
+    background-color: rgba(255, 255, 255, 0.586);
+    box-shadow: -6px 6px 2px rgba(0, 0, 0, 0.319);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+    border: 0px solid rgba(0, 0, 0, 0.355);
+    text-align: center;
+}
+
+#lcreate{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 56%;
+    top: 70%;
+    width: 16%;
+    height: 9%;
+    border-radius: 32px;
+    background-image: linear-gradient(rgb(3, 4, 4), rgba(7, 7, 7, 0.755));
+    box-shadow: -6px 6px 2px rgba(0, 0, 0, 0.319);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+    border: 0px solid rgba(0, 0, 0, 0.355);
+    letter-spacing: 2px;
+}
+
+#lcreate:hover{
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+}
+
+.qaccess{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 56%;
+    top: 85%;
+    width: 16%;
+    height: 5%;
+    border-radius: 32px;
+    background-image: linear-gradient(rgb(143, 158, 158), rgba(7, 7, 7, 0.755));
+    box-shadow: -6px 6px 2px rgba(0, 0, 0, 0.319);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+    border: 0px solid rgba(0, 0, 0, 0.355);
+    letter-spacing: 2px;
+}
+
+.qaccess:hover{
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+}
+
+#p{
+    visibility: hidden;
+}
+
+#lp{
+    visibility: hidden;
+}
+
+@media only screen and (max-width:600px) {
+    body{ background-image: url(/images/IMG_5684.JPG); background-size: cover; overflow: hidden;} 
+    #container{ padding: 25%; padding-bottom: 60%;}
+    #containerr{padding: 15%; padding-bottom: 70%;}
+    #welcometab{ visibility: hidden;}
+    #createaccnttext{ left: 20%;}
+    #username{ left: 14%; top: 23%; width: 65%; height: 9%;}
+    #email{ left: 14%; top: 40%; width: 65%; height: 9%}
+    #pword{ left: 14%; top: 58%; width: 65%; height: 9%} 
+    #create{ left: 25%; top: 74%; width: 45%; height: 8%}
+    #p{ visibility: visible; position: absolute; bottom: -1%; left: 25%;}
+    #lusername{ left: 14%; top: 29%; width: 65%; height: 13%;}
+    #lpword{ left: 14%; top: 52%; width: 65%; height: 13%} 
+    #lcreate{ left: 25%; top: 76%; width: 45%; height: 10%}
+    .qaccess{visibility: hidden;}
+    #lp{ visibility: visible; position: absolute; bottom: 0%; left: 13%;}
+}
