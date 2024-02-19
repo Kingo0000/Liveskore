@@ -660,8 +660,6 @@ router.get('/premierleague/2023', async (req,res)=> {
             res.status(500).json({ error: 'Failed to fetch competitions' });
         }
     });
-    
-
 
 // Export the router to be used in the main application
 module.exports = router;

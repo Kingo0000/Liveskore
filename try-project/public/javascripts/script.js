@@ -1,9 +1,9 @@
+
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 const nav_icon = document.querySelector('.nav_icon')
 const sideNav = document.querySelector('.side_navigation')
 const icon = document.querySelector('#icon')
-
 
 var isClicked = true
 nav_icon.addEventListener('click', revealIn)
@@ -95,3 +95,27 @@ $(function(){
     });
   });
   
+  // Check if ad blockers are active
+function detectAdBlocker() {
+    // Create a dummy div element
+    var adBlockerTest = document.createElement('div');
+    adBlockerTest.innerHTML = '&nbsp;';
+    adBlockerTest.className = 'adsbox';
+
+    // Append the dummy div to the document body
+    document.body.appendChild(adBlockerTest);
+
+    // Check if the dummy div has been affected by ad blockers
+    window.setTimeout(function() {
+        if (adBlockerTest.offsetHeight === 0) {
+            // Ad blocker detected
+            alert("You have blockers active. Please disable blockers to view scores.");
+        }
+        // Remove the dummy div from the document body
+        adBlockerTest.remove();
+    }, 100);
+}
+
+// Call the function to detect ad blockers when the window loads
+window.onload = detectAdBlocker;
+

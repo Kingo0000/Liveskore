@@ -1,5 +1,6 @@
 // jQuery document ready function
 $(document).ready(function() {
+    alert('Due to funding problems, there is a time limitation(5requests per second) to the scores which you can access. I wish there was another way, but there is none!. I will be increase the limit as time goes on.');
     // Get the select elements
     const $seasonSelect = $('#season-select');
     const $leagueButtons = $('.league');

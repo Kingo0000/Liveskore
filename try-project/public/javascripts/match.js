@@ -1,3 +1,10 @@
+
+$(document).ready(function() {
+    alert("Under Maintenance.. I'm writing exams.")
+})
+
+
+
 const lineup = document.getElementById("lineups");
 const happening = document.getElementById("happenings");
 const stats = document.getElementById("statistics");
