@@ -68,6 +68,7 @@ $(document).ready(function() {
             },
             error: function(xhr, status, error) {
                 console.error('Error fetching data:', error);
+                alert('error fetching data. This might be due to browser restrictions.');
             }
         });
     }

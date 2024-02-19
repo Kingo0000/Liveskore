@@ -186,6 +186,7 @@ leagueStandings.forEach(function(teamStanding) {
             },
             error: function(xhr, status, error) {
                 console.error('Error fetching match data:', error);
+                alert('error fetching match data. This might be due to browser restrictions.');
             }
         });
     }
