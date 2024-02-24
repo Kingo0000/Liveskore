@@ -5,13 +5,6 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const cors = require('cors');
 
-// Middleware to enable CORS
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'https://liveskore.vercel.app/home.html');
-  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-  next();
-});
-
 var indexRouter = require('./routes/index');
 var standRouter = require('./routes/standings');
 const scorerRouter = require('./routes/scorers');
@@ -23,6 +16,10 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
+
+app.use(cors({
+  origin: 'https://liveskore.vercel.app'
+}));
 
 app.use(logger('dev'));
 app.use(express.json());
