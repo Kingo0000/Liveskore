@@ -18,7 +18,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.use(cors({
-  origin: 'https://liveskore.vercel.app'
+  origin: 'https://liveskore.vercel.app/home.html'
 }));
 
 app.use(logger('dev'));
