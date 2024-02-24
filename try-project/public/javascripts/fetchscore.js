@@ -26,7 +26,7 @@ $(document).ready(function() {
     // Function to fetch standings for the selected league, season, and matchday
     function fetchStandings(leagueId, season) {
         $.ajax({
-            url: `http://api.football-data.org/v4/competitions/${leagueId}/scorers?season=${season}&limit=20`,
+            url: `https://api.football-data.org/v4/competitions/${leagueId}/scorers?season=${season}&limit=20`,
             method: 'GET',
             headers: {  'X-Auth-Token': '3d87ee9857aa46dc883317c32b4675fe' },
             success: function(response) {
