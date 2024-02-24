@@ -5,6 +5,13 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const cors = require('cors');
 
+// Middleware to enable CORS
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', 'https://liveskore.vercel.app/home.html');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  next();
+});
+
 var indexRouter = require('./routes/index');
 var standRouter = require('./routes/standings');
 const scorerRouter = require('./routes/scorers');

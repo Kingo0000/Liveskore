@@ -26,9 +26,8 @@ $(document).ready(function() {
     // Function to fetch standings for the selected league, season, and matchday
     function fetchStandings(leagueId, season) {
         $.ajax({
-            url: `https://api.football-data.org/v4/competitions/${leagueId}/scorers?season=${season}&limit=20`,
+            url: `http://localhost:5000/scorers/${leagueId}/${season}`,
             method: 'GET',
-            headers: {  'X-Auth-Token': '3d87ee9857aa46dc883317c32b4675fe' },
             success: function(response) {
                 // Clear existing table rows
                 $('#scorers-table-body').empty();
