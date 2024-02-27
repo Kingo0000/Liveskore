@@ -26,7 +26,7 @@ $(document).ready(function() {
     // Function to fetch standings for the selected league, season, and matchday
     function fetchStandings(leagueId, season) {
         $.ajax({
-            url: `http://localhost:5000/scorers/${leagueId}/${season}`,
+            url: `http://0.0.0.0:5000/scorers/${leagueId}/${season}`,
             method: 'GET',
             success: function(response) {
                 // Clear existing table rows
