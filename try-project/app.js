@@ -1,5 +1,4 @@
-const https = require('https');
-const fs = require('fs');
+
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
@@ -15,15 +14,6 @@ const matchRouer = require('./routes/matches');
 const idmatch = require('./routes/idmatch');
 
 var app = express();
-
-const options = {
-  key: fs.readFileSync('king/users/kingdavid'),
-  cert: fs.readFileSync('king/users/kingdavid')
-};
-
-https.createServer(options, app).listen(5000, () => {
-  console.log('Server running at https://0.0.0.0:5000/');
-});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
