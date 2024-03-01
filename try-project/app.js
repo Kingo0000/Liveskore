@@ -4,6 +4,9 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const cors = require('cors');
+const httpProxy = require('http-proxy');
+const proxy = httpProxy.createProxyServer();
+
 
 var indexRouter = require('./routes/index');
 var standRouter = require('./routes/standings');
@@ -48,6 +51,18 @@ app.use(function(err, req, res, next) {
   // render the error page
   res.status(err.status || 500);
   res.render('error');
+});
+
+app.get('/standings', (req, res) => {
+  proxy.web(req, res, { target: 'http://0.0.0.0:5000' });
+});
+
+app.get('/scores', (req, res) => {
+  proxy.web(req, res, { target: 'http://0.0.0.0:5000' });
+});
+
+app.get('/matches', (req, res) => {
+  proxy.web(req, res, { target: 'http://0.0.0.0:5000' });
 });
 
 module.exports = app;
