@@ -6,12 +6,10 @@ var logger = require('morgan');
 const cors = require('cors');
 
 
-
-var indexRouter = require('./routes/index');
-var standRouter = require('./routes/standings');
-const scorerRouter = require('./routes/scorers');
-const matchRouer = require('./routes/matches');
-const idmatch = require('./routes/idmatch');
+var standRouter = require('./public/javascripts/standings');
+const scorerRouter = require('./public/javascripts/scorers');
+const matchRouer = require('./public/javascripts/matches');
+const idmatch = require('./public/javascripts/idmatch');
 
 var app = express();
 
@@ -30,7 +28,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(cors());
 
-app.use('/', indexRouter);
+
 app.use('/standings', standRouter);
 app.use('/scorers', scorerRouter);
 app.use('/matches', matchRouer);
