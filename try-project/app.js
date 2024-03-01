@@ -1,11 +1,11 @@
-var createError = require('http-errors');
+const https = require('https');
+const fs = require('fs');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const cors = require('cors');
-const httpProxy = require('http-proxy');
-const proxy = httpProxy.createProxyServer();
+
 
 
 var indexRouter = require('./routes/index');
@@ -15,6 +15,15 @@ const matchRouer = require('./routes/matches');
 const idmatch = require('./routes/idmatch');
 
 var app = express();
+
+const options = {
+  key: fs.readFileSync('king/users/kingdavid'),
+  cert: fs.readFileSync('king/users/kingdavid')
+};
+
+https.createServer(options, app).listen(5000, () => {
+  console.log('Server running at https://0.0.0.0:5000/');
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -51,18 +60,6 @@ app.use(function(err, req, res, next) {
   // render the error page
   res.status(err.status || 500);
   res.render('error');
-});
-
-app.get('/standings', (req, res) => {
-  proxy.web(req, res, { target: 'http://0.0.0.0:5000' });
-});
-
-app.get('/scores', (req, res) => {
-  proxy.web(req, res, { target: 'http://0.0.0.0:5000' });
-});
-
-app.get('/matches', (req, res) => {
-  proxy.web(req, res, { target: 'http://0.0.0.0:5000' });
 });
 
 module.exports = app;
