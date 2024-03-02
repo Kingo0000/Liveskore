@@ -302,7 +302,7 @@ p{
     padding: 10px;
     border: none;
     border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.417);
   }
   
   .insubmit{
@@ -724,6 +724,7 @@ td, th {
   /* border: 1px solid black; */
   left: 3px;
   color: #0000008e;
+  font-size: smaller;
 }
 .date{
   margin-top: 5px;
@@ -732,6 +733,7 @@ td, th {
   /* border: 1px solid black; */
   color: #0000008e;
   top: 2px;
+  font-size: smaller;
 }
 .club1{
   /* border: 1px solid black; */
@@ -942,7 +944,7 @@ p{font-size: 40px; height: 1cqb; top: -30px;}
 button.opt{width: 12.6%;}
 .league{width: 10%;}
 .sel-con{border: none;}
-.status{left: 48%;}
+.status{left: 50%;}
 .top-intro{position: absolute; width: 100%; left: 0%;}
 }
 
@@ -957,7 +959,7 @@ button.opt{width: 12.6%;}
   .insearch{ border-radius: 0px; font-size: larger;}
   .insubmit{width: 8%; height: 43px;}
   button.opt{width: 13%;}
-  .status{left: 48%;}
+  .status{left: 50%;}
   .top-intro{position: absolute; width: 100%; left: 0%;}
   }
   
