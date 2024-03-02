@@ -56,7 +56,7 @@
     left: 75%;
     font-size: 30px;
     color: #09090aa2;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Merienda", sans-serif;
   }
 
   button{
@@ -69,7 +69,7 @@
   }
 
   .btntext{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Merienda", sans-serif;
   }
   .btn{
     position: relative;
@@ -84,8 +84,9 @@
     border-bottom: 3px solid rgb(32, 43, 254);
     font-size: 0.7rem;
     letter-spacing: 1px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Merienda", sans-serif;
     transition: border-bottom 1s, box-shadow 1s;
+    color: black;
   }
 
   .btn3{
@@ -119,7 +120,7 @@
   table {
     position: relative;
     top: 12px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Merienda", sans-serif;
     border-collapse: collapse;
     width: 100%;
     border-radius: 4px;
@@ -130,7 +131,7 @@
     text-align: left;
     padding: 12px;
     height: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Merienda", sans-serif;
   }
   
   .away{
@@ -153,7 +154,7 @@
 .score{
   position: relative;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Merienda", sans-serif;
   font-size: x-large;
 
 }
@@ -161,7 +162,7 @@
 .time{
   position: relative;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Merienda", sans-serif;
   font-size: x-small;
 }
 

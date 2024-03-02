@@ -215,7 +215,8 @@ li .register a{
 
 .list {
   float: left;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Merienda", sans-serif;
+  font-weight: lighter;
   font-size: larger;
   width: 19%;
 }
@@ -261,7 +262,8 @@ p{
     border: 2px so3id white;
     float: right;
     border-radius: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Merienda", sans-serif;
+    font-weight: lighter;
     box-shadow: 0 3px 3px 0 rgba(0,0,0,0.24), 0 3px 10px 0 rgba(0,0,0,0.19);
 }
 
@@ -277,7 +279,8 @@ p{
     width: 50px;
     border: 1px solid rgb(198, 198, 198);
     border-radius: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Merienda", sans-serif;
+    font-weight: lighter;
     color: rgb(2, 2, 2);
 }
 
@@ -337,7 +340,8 @@ p{
   font-size: 120%;
   width: 40%;
   height: 25px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Merienda", sans-serif;
+  font-weight: lighter;
   bottom: 10px;
   left: 4px;
  }
@@ -347,11 +351,14 @@ select{
   font-size: 20px;
   position: relative;
   left: 55%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Merienda", sans-serif;
+  font-weight: lighter;
   text-align: center;
   border: none;
   border-radius: 9px;
   bottom: 10px;
+  background-color: white;
+  color: black;
 }
 
 
@@ -389,6 +396,7 @@ button{
 }
 
 .opt{
+  color: black;
   margin-top: 10px;
   border: none;
   width: 70px;
@@ -406,7 +414,8 @@ button{
 
 
 .btntext{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Merienda", sans-serif;
+  font-weight: lighter;
 }
 
 /* .midprompt{
@@ -542,8 +551,10 @@ button{
   border-bottom: 3px solid rgb(32, 43, 254);
   font-size: 0.7rem;
   letter-spacing: 1px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Merienda", sans-serif;
+  font-weight: lighter;
   transition: border-bottom 1s, box-shadow 1s;
+  color: black;
 }
  
 .btn1:hover{
@@ -614,7 +625,7 @@ button{
 
 .laliga{
   height: 20px;
-  padding: 5px;
+  padding: 1px;
 }
 
 .ll{
@@ -645,17 +656,20 @@ button{
   width: 30%;
   /* border: 2px solid black; */
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Merienda", sans-serif;
+  font-weight: lighter;
   position: relative;
   top: 4px;
 }
 
 #matchday-select{
   font-size: smaller;
-  bottom: 14px;
+  top: -20px;
   width: fit-content;
   left: 66%;
   border-radius: 3px;
+  color: black;
+  background-color: white;
 }
 
 .mcontainer{
@@ -674,7 +688,7 @@ button{
 }
 
 table {
-  font-family: arial, sans-serif;
+  font-family: "Merienda", sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
@@ -728,7 +742,8 @@ td, th {
   font-size: 100%;
   color: black;
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Merienda", sans-serif;
+  font-weight: lighter;
 }
 .vs{
   /* border: 1px solid black; */
@@ -744,7 +759,8 @@ td, th {
     position: absolute;
     text-decoration: none;
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Merienda", sans-serif;
+    font-weight: lighter;
     left: 41%;
     top: 70px;
 }
@@ -772,11 +788,12 @@ td, th {
   position: absolute;
   top: 35px;
   width: auto;
-  left: 65%;
+  left: 60%;
   font-size: 100%;
   color: black;
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Merienda", sans-serif;
+  font-weight: lighter;
 }
 
 

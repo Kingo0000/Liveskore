@@ -1,6 +1,6 @@
 // jQuery document ready function
 $(document).ready(function() {
-    alert('Due to funding problems, there is a time limitation(5requests per second) to the scores which you can access. I wish there was another way, but there is none!. I will be increase the limit as time goes on.');
+    alert('Due to monetary problems, there is a time limitation(5requests per second) to the data which you can access. I will increase the limit as time goes on.');
     // Get the select elements
     const $seasonSelect = $('#season-select');
     const $leagueButtons = $('.league');
@@ -68,7 +68,7 @@ $(document).ready(function() {
             },
             error: function(xhr, status, error) {
                 console.error('Error fetching data:', error);
-                alert('error fetching data. This might be due to browser restrictions.');
+                alert('Limit exceeded. No vex, Please Wait 30 seconds before lading again.');
             }
         });
     }
