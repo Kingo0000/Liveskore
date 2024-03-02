@@ -14,7 +14,7 @@ $(document).ready(function() {
 
     // Fetch standings for the Premier League based on the current matchday and default season
     $.ajax({
-        url: 'http://0.0.0.0:5000/standings/premierleague/2023', 
+        url: 'https://myapi-nu.vercel.app/standings/premierleague/2023', 
         method: 'GET',
         success: function(response) {
             const currentMatchday = response.season.currentMatchday;
@@ -60,7 +60,7 @@ $(document).ready(function() {
     // Function to fetch standings for the selected league, season, and matchday
     function fetchStandings(leagueId, season, matchday) {
         $.ajax({
-            url: `http://0.0.0.0:5000/standings/${leagueId}/${season}/${matchday}`,
+            url: `https://myapi-nu.vercel.app/standings/${leagueId}/${season}/${matchday}`,
             method: 'GET',
             success: function(response) {
                 // Clear existing table rows
@@ -128,7 +128,7 @@ leagueStandings.forEach(function(teamStanding) {
 
     function fetchMatches(leagueId, season, matchday) {
         $.ajax({
-            url: `http://0.0.0.0:5000/matches/${leagueId}/${season}/${matchday}`,
+            url: `https://myapi-nu.vercel.app/matches/${leagueId}/${season}/${matchday}`,
             method: 'GET',
             success: function(response) {
                 // Iterate over the matches and populate the HTML elements
