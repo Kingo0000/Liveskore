@@ -115,7 +115,6 @@ leagueStandings.forEach(function(teamStanding) {
     row.append($('<td>').text(teamStanding.won));
     row.append($('<td>').text(teamStanding.draw));
     row.append($('<td>').text(teamStanding.lost));
-    row.append($('<td>').text(teamStanding.goalDifference));
     $('#standings-table-body').append(row);
 });
 
