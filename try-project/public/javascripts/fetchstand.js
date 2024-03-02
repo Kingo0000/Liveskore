@@ -132,6 +132,7 @@ leagueStandings.forEach(function(teamStanding) {
             method: 'GET',
             success: function(response) {
                 // Iterate over the matches and populate the HTML elements
+                if (response.matches && Array.isArray(response.matches)) {
                 response.matches.forEach(function(match, index) {
                     var matchDiv = $('.matches').eq(index); // Select the corresponding match div
 
@@ -182,7 +183,11 @@ leagueStandings.forEach(function(teamStanding) {
 
                     // Set league emblem
                     $('.league-emblem').attr('src', response.competition.emblem);
-                });
+                })}
+                else {
+                    // Handle the case where response.matches is undefined or not an array
+                    console.error("Response matches is not defined or not an array");
+                };
             },
             error: function(xhr, status, error) {
                 console.error('Error fetching match data:', error);
