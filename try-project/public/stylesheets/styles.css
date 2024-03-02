@@ -348,7 +348,7 @@ p{
  }
 
 select{
-  width: 40%;
+  width: auto;
   font-size: 20px;
   position: relative;
   left: 55%;
