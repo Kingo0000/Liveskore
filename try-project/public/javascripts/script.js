@@ -92,6 +92,7 @@ $(function(){
         $('th').toggleClass('dmth');
         $('table').toggleClass('dmtable');
         $('thead').toggleClass('dmthead');
+        $('.league.active').toggleClass('dmlactive');
     });
   });
   

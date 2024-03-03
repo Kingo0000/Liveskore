@@ -68,7 +68,7 @@ $(document).ready(function() {
             },
             error: function(xhr, status, error) {
                 console.error('Error fetching data:', error);
-                alert('Limit exceeded. No vex, Please Wait 30 seconds before lading again.');
+                alert('Limit exceeded. No vex, Please Wait 30 seconds before loading again.');
             }
         });
     }
