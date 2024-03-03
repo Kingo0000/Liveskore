@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-    alert("Under Maintenance.. I'm writing exams.")
+    alert("Under Maintenance..")
 })
 
 
