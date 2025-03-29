@@ -1,6 +1,6 @@
 // jQuery document ready function
 $(document).ready(function() {
-    alert('Due to monetary problems, there is a time limitation(5requests per second) to the data which you can access. I will increase the limit as time goes on.');
+    alert('Due to access limitation, there is a time limitation(5requests per second) to the data which you can access. I will increase the limit as time goes on.');
     // Get the select elements
     const $seasonSelect = $('#season-select');
     const $leagueButtons = $('.league');
