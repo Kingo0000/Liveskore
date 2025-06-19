@@ -109,7 +109,6 @@ $(document).ready(function () {
           teamCell.append(" "); // Add a space for separation (optional)
           teamCell.append(teamStanding.team.shortName); // Append the team name
           row.append(teamCell); // Append the cell to the row
-
           row.append($("<td>").text(teamStanding.points));
           row.append($("<td>").text(teamStanding.playedGames));
           row.append($("<td>").text(teamStanding.won));
@@ -146,7 +145,6 @@ $(document).ready(function () {
               date.getMonth() + 1
             }/${date.getFullYear()} ${formattedHours}:${formattedMinutes}`;
             matchDiv.find("#utcDate").text(formattedDate);
-
             const homeTeamCrest = $("<img>").attr("src", match.homeTeam.crest);
             homeTeamCrest.css({
               "max-height": "20px", // Set the maximum height
